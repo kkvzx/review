@@ -6,6 +6,7 @@ const nameEl = document.querySelector(".name");
 const positionEl = document.querySelector(".position");
 const reviewEl = document.querySelector(".review");
 
+//actual position
 let number = 0;
 
 const person = {
@@ -46,7 +47,7 @@ btns.forEach(function (btn) {
 
     // Dodatkowe zmienne
     const lengthOfArray = person.name.length;
-
+    //Praca programu
     if (way.contains("left")) {
       render(swipeL(number, lengthOfArray));
     } else if (way.contains("right")) {
@@ -57,13 +58,19 @@ btns.forEach(function (btn) {
   });
 });
 
+//======
+//functions
+//=========
+
 function render(i) {
+  //screen render
   nameEl.innerHTML = person.name[i];
   positionEl.innerHTML = person.position[i];
   reviewEl.innerHTML = person.review[i];
-  photoEl.setAttribute("src", person.photo[i]);
+  photoEl.src = person.photo[i];
 }
 
+//buttons
 function swipeL(i, lengthA) {
   if (i > 0) {
     i--;

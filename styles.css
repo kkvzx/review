@@ -123,14 +123,13 @@ buttons
 .suprise {
   background: none;
   border-radius: 7px;
-  margin-top: 5px;
-  padding: 3px;
+  margin-top: 5;
+  padding: 5px;
   font-size: 0.8rem;
   letter-spacing: 1.5px;
   cursor: pointer;
   color: rgb(21, 88, 165);
   background: rgba(93, 169, 255, 0.267);
-  border: 2px solid rgb(68, 128, 197);
   transition: all 1s;
 }
 .btn:hover {
